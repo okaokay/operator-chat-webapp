@@ -11,13 +11,11 @@ function App() {
   }, []);
 
   return (
-    <div style={{ padding: 24 }}>
+    <div style={{ padding: '2rem' }}>
       <h1>Richieste da utenti</h1>
       <ul>
         {messages.map((msg, i) => (
-          <li key={i}>
-            <strong>{msg.name}</strong>: {msg.message}
-          </li>
+          <li key={i}>{msg.content}</li>
         ))}
       </ul>
     </div>
